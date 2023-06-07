@@ -1,0 +1,111 @@
+table {
+  border-collapse: collapse;
+  text-align: center;
+  transition: all 1s linear;
+}
+
+thead {
+  background-color: #d5d1d1;
+}
+
+tr:nth-child(n+1):hover {
+  background-color: burlywood;
+}
+
+
+/*model*/
+#model {
+  width: 400px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.46);
+  border: 1px solid #ccc;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: white;
+}
+
+.title {
+  height: 40px;
+  background: #f6f6f6;
+  line-height: 40px;
+  padding-left: 20px;
+  color: #555;
+  user-select: none;
+}
+
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 0 20px 5px;
+  transition: background 0.2s;
+  font-family: 'Segoe UI';
+  line-height: 35px;
+  overflow: hidden;
+}
+
+.close:hover {
+  background-color: #e81123;
+  color: #fff;
+}
+
+div:nth-child(2) p {
+  text-indent: 2rem;
+  line-height: 100%;
+  padding: 15px 5px;
+}
+
+.blueBtn {
+  background-color: cornflowerblue;
+  border: 0;
+  padding: 8px 16px;
+  margin: 10px;
+  color: white;
+  float: right;
+}
+
+
+/* 表单控件 */
+
+.input-Control {
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 0 10px lightgray;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  display: none;
+}
+
+.input-Control .input-Content {
+  margin: 5px;
+}
+
+
+/* 返回顶部 */
+.top {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0 0 10px lightgrey;
+  text-align: center;
+  position: fixed;
+  bottom: 3rem;
+  right: 15px;
+  z-index: 9;
+  transition: all 1s linear;
+
+}
+
+.top span {
+  display: inline-block;
+  transform: rotate(-90deg);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 50px;
+  cursor: pointer;
+}
